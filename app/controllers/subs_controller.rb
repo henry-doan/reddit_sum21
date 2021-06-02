@@ -93,9 +93,13 @@ class SubsController < ApplicationController
   #     @model_name = Model_name.find(params[:id])
   #   end
 
+  # def index 
+  #   render component: "Testing"
+  # end
+
   def index 
     @subs = Sub.all 
-    render component: 'Subs', props: { subs: @sub }
+    render component: 'Subs', props: { subs: @subs }
   end
 
   def show
