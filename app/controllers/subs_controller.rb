@@ -104,6 +104,7 @@ class SubsController < ApplicationController
 
   def show
     @sub = Sub.find(params[:id])
+    # @sub = Sub.find(2)
     render component: 'Sub', props: { sub: @sub }
   end
 
@@ -117,6 +118,7 @@ class SubsController < ApplicationController
     if @sub.save 
       redirect_to root_path
     else
+      # let the user know why it didn't work
       render component: 'SubNew', props: { sub: @sub }
     end
   end

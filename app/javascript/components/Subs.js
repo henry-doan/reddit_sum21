@@ -14,7 +14,9 @@ const Subs = ({ subs }) => {
           <div>
             <h3>{sub.title}</h3>
             <a href={'/subs/' + sub.id}>Show sub</a>
+            {' '}
             <a href={'/subs/' + sub.id + '/edit'}>Edit Sub</a>
+            {' '}
             <a href={'/subs/' + sub.id} data-method="delete">Delete Sub</a>
           </div>
         ))
