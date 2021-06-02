@@ -18,6 +18,8 @@ const Sub = ({ sub }) => {
       {/* <a href={`/subs/${id}` } data-method="delete">Delete sub</a> */}
       <br />
       <a href={'/subs/' + id + '/edit'}>Edit Sub</a>
+      <br />
+      <a href={`/subs/${id}/topics`}>Show Topics</a>
     </>
   )
 }
