@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     # http verb, url, endpoint, rails command
   # get 'people/new', to: 'people#index'
   # post 
-  root 'subs#index'
+  root 'static_pages#home'
 
   # bad example
   # resources :subs do 
@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   #     resources :comments
   #   end
   # end
+
+  get '/home', to: 'static_pages#home'
+  get '/about', to: 'static_pages#about'
 
   resources :subs do 
     resources :topics

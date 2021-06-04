@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+.title {
+  background: #C559F5 !important;
+  color: white;
+  font-size: 34px;
+}
+
+// .title class name of title 
+// #title id of title 
